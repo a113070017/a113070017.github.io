@@ -1,13 +1,8 @@
+/* 在 mystyle.css 裡 */
 body {
-  background-color: #fdf6ec;
+  background-color: #fdf6ec !important;
 }
 
-h1, h2, h3 {
-  font-family: "Noto Serif TC", serif;
+.resume-section {
+  background-color: #000000 !important;
 }
-
-.text-primary {
-  color: #004b97 !important; /* 更改主色系 */
-}
-
-
