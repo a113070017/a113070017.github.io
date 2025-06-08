@@ -1,0 +1,13 @@
+body {
+  background-color: #fdf6ec;
+}
+
+h1, h2, h3 {
+  font-family: "Noto Serif TC", serif;
+}
+
+.text-primary {
+  color: #004b97 !important; /* 更改主色系 */
+}
+
+
