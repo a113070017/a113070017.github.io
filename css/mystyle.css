@@ -8,10 +8,15 @@
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
+
 .homepage {
-  background-image: url(images/background.jpg); /* 換成你的圖片路徑 */
+  background-image: url("assets/images/background.jpg"); /* 請把檔名換成你實際的檔案名稱 */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
+}
+
+.homepage .content {
+  background: transparent;
 }
