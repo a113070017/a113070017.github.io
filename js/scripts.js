@@ -32,3 +32,33 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const photo = document.getElementById('photo');
+  const images = [
+    'assets/img/yu1.jpg',
+    'assets/img/yu2.jpg',
+    'assets/img/yu3.jpg',
+    'assets/img/yu4.jpg',
+    'assets/img/yu5.jpg'
+  ];
+  let currentIndex = 0;
+
+  function showPhoto(index) {
+    photo.style.transform = 'rotateY(180deg)';
+    setTimeout(() => {
+      photo.src = images[index];
+      photo.style.transform = 'rotateY(0deg)';
+    }, 300);
+  }
+
+  window.nextPage = () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    showPhoto(currentIndex);
+  };
+
+  window.prevPage = () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showPhoto(currentIndex);
+  };
+});
