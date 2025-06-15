@@ -34,6 +34,13 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+  bootstrap.ScrollSpy.getOrCreateInstance(document.body, {
+    target: '#sideNav',
+    offset: 70, // 可根據你的 navbar 高度微調
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
   const photo = document.getElementById('photo');
   const images = [
     'assets/img/yu1.jpg',

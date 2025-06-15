@@ -9,6 +9,10 @@
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
 
+.nav-link.active {
+    color: white !important;
+}
+
 .photo-book {
   display: flex;
   align-items: center;
@@ -47,8 +51,8 @@
 }
 
 .single-image-with-caption img {
-  width: 25vw;   /* ✅ 寬度為螢幕的四分之一 */
-  height: auto;  /* ✅ 高度等比縮放 */
+  width: 25vw;   /* 寬度為螢幕的四分之一 */
+  height: auto;  /* 高度等比縮放 */
   /* 沒有 border-radius，保留原圖邊角 */
 }
 
